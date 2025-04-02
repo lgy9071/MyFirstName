@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Java NEWS</title>
+        <meta name="description" content="Java Programming News">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            /* 전체 콘텐츠 영역 */
+            .news-contents {
+                display: flex; /* flexbox를 사용하여 왼쪽, 오른쪽 공간을 나눈다 */
+                justify-content: space-between; /* 왼쪽과 오른쪽에 균등한 공간을 제공 */
+                gap: 20px; /* 왼쪽과 오른쪽 사이에 간격을 추가 */
+            }
+
+            /* 왼쪽 콘텐츠 */
+            .news-contents article {
+                flex: 4; /* 왼쪽 콘텐츠는 3배의 크기 */
+            }
+
+            /* 오른쪽 사이드바 */
+            .news-contents aside {
+                flex: 1; /* 오른쪽 사이드바는 1배의 크기 */
+                background-color: #f9f9f9; /* 배경색 추가 */
+                padding: 20px; /* 패딩 추가 */
+                border-radius: 8px; /* 둥근 모서리 */
+            }
+
+            /* 사이드바 제목 스타일 */
+            .sub-title {
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+            }
+
+            /* 메뉴 항목 스타일 */
+            .sub-menu {
+                list-style: none;
+                padding: 0;
+            }
+
+            .sub-menu li {
+                margin: 10px 0;
+            }
+
+            .sub-menu a {
+                text-decoration: none;
+                color: #0077cc;
+            }
+
+            .sub-menu a:hover {
+                text-decoration: underline;
+            }
+            .page-header {
+            background-image: url('../ex03/image/자바 긴 로고.jpg'); /* 로고 이미지 경로 */
+            background-size: cover; /* 이미지가 배경을 꽉 채우도록 설정 */
+            background-position: center; /* 이미지를 중앙에 배치 */
+            background-repeat: no-repeat; /* 이미지가 반복되지 않도록 설정 */
+            height: 200px; /* 헤더의 높이를 설정 (필요에 맞게 조정) */
+            display: flex;
+            align-items: center; /* 헤더 내부 요소들이 수직 중앙에 오도록 설정 */
+            justify-content: center; /* 헤더 내부 요소들이 수평 중앙에 오도록 설정 */
+            padding: 0 20px; /* 좌우 여백 추가 */
+            }
+        </style>
+    </head>
+
+    <body>
+            <header class="page-header wrapper">
+                <h1><a href="http://192.168.0.15:5500/ex01/ex03/day0401.html"><img class="logo" src="../ex03/image/자바 긴 로고.jpg" alt="Java Home"></a></h1>
+                <nav>
+                    <ul class="main-nav">
+                        <li><a href="news.html">Java News</a></li>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="wrapper">
+                <h2 class="page-title">Java News</h2>
+            </div><!-- /.wrapper -->
+
+        <div class="news-contents wrapper">
+            <!-- 왼쪽 콘텐츠 -->
+            <article>
+                <header class="post-info">
+                    <h2 class="post-title">재미있는 자바</h2>
+                    <p class="post-date">4/01    <span>2025</span></p>
+                    <p class="post-cat">카테고리：자바</p>
+                </header>
+                <img src="../ex03/image/자바 타입 종류.jpg" alt="Java Logo">
+                <p>
+                    오늘은 자바의 변수와 클래스에 대해 배워봅시다. 
+                    자바의 변수로는 매개 변수, 참조 변수, 지역 변수, 전역 변수, 
+                    클래스, 인스턴스 변수, 맴버 변수가 있습니다.
+                    맴버변수가 값을 할당 받는게 인스턴스 변수입니다.
+                    클래스 함수는 인스턴스화 되지 않아도 쓸 수 있는 함수입니다.
+                </p>
+                <p>
+                    클래스란 붕어빵 틀🍳과 같은 역할로 붕어빵인 인스턴스🥚를 생성합니다.
+                    클래스는 '자료형'📌입니다.
+                </p>
+                <p>
+                    맴버 변수(필드)와 맴버 함수(메소드)가 있습니다. 일반 함수에서 setter와 getter를 사용합니다.
+                    접근 제한자를 사용하기도 합니다. 접근 제한자의 종류로는 public, private 등이 있습니다.
+                    한 클래스에서 main은 하나만 올 수 있습니다. 
+                </p>
+                <p>
+                    오늘은 자바의 변수와 클래스에 대해 배워봅시다. 
+                    자바의 변수로는 매개 변수, 참조 변수, 지역 변수, 전역 변수, 
+                    클래스, 인스턴스 변수, 맴버 변수가 있습니다.
+                    맴버변수가 값을 할당 받는게 인스턴스 변수입니다.
+                    클래스 함수는 인스턴스화 되지 않아도 쓸 수 있는 함수입니다.
+                </p>
+                <p>
+                    클래스란 붕어빵 틀🍳과 같은 역할로 붕어빵인 인스턴스🥚를 생성합니다.
+                    클래스는 '자료형'📌입니다.
+                </p>
+                <p>
+                    맴버 변수(필드)와 맴버 함수(메소드)가 있습니다. 일반 함수에서 setter와 getter를 사용합니다.
+                    접근 제한자를 사용하기도 합니다. 접근 제한자의 종류로는 public, private 등이 있습니다.
+                    한 클래스에서 main은 하나만 올 수 있습니다. 
+                </p>
+            </article>
+
+            <!-- 오른쪽 사이드바 -->
+            <aside>
+                <h3 class="sub-title">카테고리</h3>
+                <ul class="sub-menu">
+                    <li><a href="#">Java Tutorials</a></li>
+                    <li><a href="#">자바 기초</a></li>
+                    <li><a href="#">Practice</a></li>
+                    <li><a href="#">Exam</a></li>
+                </ul>
+
+                <h3 class="sub-title">자바 소개</h3>
+                <p>
+                    자바는 객체지향 프로그래밍 언어로, 1995년 썬 마이크로시스템즈(Sun Microsystems)에서 개발되었습니다. 
+                    자바는 플랫폼 독립성을 제공하며, "한 번 작성하고 어디서나 실행된다"는 철학을 가지고 있습니다. 
+                    이 특징 덕분에 자바는 다양한 운영 체제에서 실행할 수 있으며, 대규모 엔터프라이즈 애플리케이션 개발에 주로 사용됩니다.
+                </p>
+            </aside>
+        </div><!-- /.news-contents -->
+
+        <footer>
+            <div class="wrapper">
+                <p><small>&copy; 2025 Java News</small></p>
+            </div>
+        </footer>
+    </body>
+</html>
